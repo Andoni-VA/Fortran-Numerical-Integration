@@ -1,94 +1,49 @@
-# Fortran-Numerical-Integration
-Fortran program that integrates y = sqrt(1 − x²) over [0,1] using trapezoidal and Simpson methods, both simple and composite. Numerical results are compared with the exact value π/4 to study accuracy and convergence.
+# Numerical Integration in Fortran
 
-Numerical Integration in Fortran
+This repository contains a Fortran program that performs the numerical integration of the function:
 
-This repository contains a Fortran program that performs the numerical integration of the function
+y = sqrt(1 - x^2)
 
-𝑦
-=
-1
-−
-𝑥
-2
-y=
-1−x
-2
-	​
+over the interval [0, 1].
 
+The exact value of this integral is pi / 4, which is used as a reference to evaluate the numerical error.
 
-over the interval 
-[
-0
-,
-1
-]
-[0,1], whose exact value is:
+## Implemented Methods
 
-∫
-0
-1
-1
-−
-𝑥
-2
- 
-𝑑
-𝑥
-=
-𝜋
-4
-∫
-0
-1
-	​
-
-1−x
-2
-	​
-
-dx=
-4
-π
-	​
-
-
-The program compares several classical numerical integration methods with the exact result.
-
-Implemented Methods
-
-The following quadrature rules are implemented:
+The following numerical integration methods are implemented:
 
 Trapezoidal rule
 
-Simpson’s rule
+Simpson's rule
 
 Composite trapezoidal rule
 
-Composite Simpson’s rule
+Composite Simpson's rule
 
-Each method is used to approximate the integral and its result is compared against the analytical value 
-𝜋
-/
-4
-π/4.
+Each method approximates the integral and compares the result with the exact value pi / 4.
 
-Purpose
+## Purpose
 
-The goal of this project is to:
+The goals of this project are:
 
-Study the accuracy of different numerical integration methods
+To study the accuracy of classical numerical integration methods
 
-Compare simple vs composite rules
+To compare simple and composite quadrature rules
 
-Analyze the numerical error with respect to the exact solution
+To analyze numerical error and convergence
 
-Practice structured scientific programming in Fortran
+To practice structured scientific programming in Fortran
 
-This type of problem is a classical benchmark in numerical analysis.
+This is a standard benchmark problem in numerical analysis.
 
-Requirements
+## Requirements
 
 A Fortran compiler (e.g. gfortran)
 
-Standard Fortran 90 or later
+Fortran 90 or later
+
+## Output
+
+The program prints the numerical result obtained with each method and compares it with the exact value pi / 4, allowing direct evaluation of accuracy and convergence.
+
+Composite methods show improved accuracy as the number of subintervals increases

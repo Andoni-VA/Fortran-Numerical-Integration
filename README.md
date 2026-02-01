@@ -47,3 +47,10 @@ Fortran 90 or later
 The program prints the numerical result obtained with each method and compares it with the exact value pi / 4, allowing direct evaluation of accuracy and convergence.
 
 Composite methods show improved accuracy as the number of subintervals increases
+
+# How to Compile and Execute it
+
+Example:
+\bash
+1) F -o nc mcf_tipos.f90 fun.f90 newton_cotes.f90
+2) nc
